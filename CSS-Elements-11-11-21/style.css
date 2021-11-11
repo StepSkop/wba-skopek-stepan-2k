@@ -1,0 +1,75 @@
+/* Pro všechny elementy h1 */
+h1 {
+    text-align: center;
+    color: rgb(255, 0, 200);
+    font-size: 72px;
+}
+/* Pro všechny elementy h2 a h3 */
+h2, h3 {
+    text-align: center;
+    color: indigo;
+    font-size: 24px;
+}
+/* Pro všechny elementy s classou "firstyle" */
+.firStyle {
+    text-align: left;
+    color: lightseagreen;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Pouze pro paragrafy p2 s classou secondstyle */
+p.secondStyle {
+    text-align: left;
+    color: lightskyblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Pouze pro jeden element */
+#onlyoneStyle {
+    text-align: right;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Všechny paragrafy pod dividerem */
+div p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+/* Paragraf přímo v divideru */
+div > p {
+    background-color:rgba(194, 181, 181, 0.993);
+}
+/* Všechny paragrafy pod dividerem */
+div ~ p {
+    color: navy;
+    text-align: center;
+    background-color: khaki;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Paragraf přímo pod dividerem */
+div + p {
+    text-align: center;
+    font-size: 16px;
+    color: chartreuse;
+    font-weight: bold;
+}
+/* Při ukázání myší na h1*/
+h1:hover {
+    color: orange;
+}
+/* První element vůbec nebo první heading v divideru*/
+p:first-child {
+    text-decoration: underline;
+    color: orangered;
+}
+
+
+
+
+
+
+
