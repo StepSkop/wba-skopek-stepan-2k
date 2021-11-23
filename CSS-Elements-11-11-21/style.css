@@ -31,7 +31,7 @@ p.secondStyle {
     font-size: 16px;
     font-weight: bold;
 }
-/* Všechny paragrafy pod dividerem */
+/* Všechny paragrafy v divideru (kdekoliv) */
 div p {
     text-align: center;
     font-size: 16px;
@@ -61,10 +61,10 @@ div + p {
 h1:hover {
     color: orange;
 }
-/* První element vůbec nebo první heading v divideru*/
+/* První element vůbec nebo v divideru*/
 p:first-child {
     text-decoration: underline;
-    color: orangered;
+    color: rgb(174, 0, 255);
 }
 
 
