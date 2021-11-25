@@ -16,7 +16,6 @@
     background-color: cyan;
     width: 1200px;
 }
-
   .flex-items {
     display: flex;
     flex-grow: 0;
