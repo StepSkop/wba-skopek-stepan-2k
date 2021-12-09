@@ -29,13 +29,14 @@
 }
 .textboxContainer {
     display: flex;
+    position: absolute;
     justify-items: center;
     align-items: center;
     justify-content: center;
-    height: 85%;
+    height: 100%;
+    width: 100%;
 }
 .textbox {
-    position: absolute;
     border-radius: 15px;
     padding: 30px;
     width: 50%;
