@@ -1,0 +1,83 @@
+.page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("imgs/Cosmic-Gradient-14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.panel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgba(38, 32, 62, 0.8);
+    height: 100px;
+    width: 80%;
+}
+.textboxContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+.textbox {
+    border-radius: 15px;
+    padding: 30px;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font: bold;
+    font-family: 'Arial';
+    box-shadow: 0 0 35px #ffffff;
+}
+
+.nadpis {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.odstavec {
+    display:flex;
+    font-size: 1rem;
+    text-align:justify;
+
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial';
+
+}
+.item {
+    font-size: 1.1rem;
+    padding: 16px;
+}
+.search {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
