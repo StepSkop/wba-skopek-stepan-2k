@@ -33,7 +33,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
     width: 20%;
 }
 .menu {
