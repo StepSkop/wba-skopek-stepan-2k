@@ -42,7 +42,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     align-items: center;
     height: 100%;
     width: 80%;
-    padding: 10px;
+    padding-right: 30px;
+    padding-top: 7px;
 }
 .menu ul {
     text-align: center;
@@ -53,13 +54,24 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: inline;
 }
 .menu ul li a {
-    color: whitesmoke;
+    color: #fbc501;
     font-size: 1em;
     line-height: 1em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     display: inline;
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.562)
+    
+}
+.menu ul li :hover {
+    background-color: #fbc5015b;
+    color: #131313;
 }
 .home {
     display: flex;
