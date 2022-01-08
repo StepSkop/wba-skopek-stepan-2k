@@ -38,10 +38,28 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
     width: 80%;
+    padding: 10px;
+}
+.menu ul {
+    text-align: center;
+    margin: 0 20px;
+}
+.menu ul li {
+    list-style: none;
+    display: inline;
+}
+.menu ul li a {
+    color: whitesmoke;
+    font-size: 1em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    display: inline;
 }
 .home {
     display: flex;
@@ -61,7 +79,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     filter: brightness(20%) grayscale(1%);
     z-index: 0;
 }
-.youngartistsCircle {
+.youngartistsCont {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,13 +88,20 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     height: 250px;
     width: 250px;
     z-index: 1;
-    opacity: 90%;
     filter: brightness(300%) grayscale(100%);
+}
+.youngartistsCircle {
     opacity: 40%;
 }
 .youngartists {
+    position: absolute;
+    justify-self: center;
     opacity: 100%;
-    z-index: 2;
+    color: white;
+    font-family: Roboto,sans-serif;
+    font-size: 64px;
+    letter-spacing: 10px;
+    
 }
 .about {
     display: flex;
