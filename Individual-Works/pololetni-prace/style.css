@@ -67,7 +67,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     font-family: Roboto,sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.295)
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 4px;
 }
 .menu ul li :hover {
     background-color: #fbc5015b;
