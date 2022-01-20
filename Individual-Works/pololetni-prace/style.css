@@ -20,14 +20,13 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     width: 100%;
     padding-bottom: 0.5rem;
     padding-left: 00.5rem;
-    top: 0;
     column-gap: 0.5rem;
     z-index: 999;
 }
 .splitter1 {
     display: flex;
     justify-content: center;
-    height: 5rem;
+    height: 9vh;
     background-color: rgb(199, 199, 199);
 }
 .icon {
@@ -36,6 +35,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     align-items: center;
     justify-content: left;
     width: 20%;
+    padding: 5rem;
+}
+.icon img {
 }
 .menu {
     display: flex;
@@ -122,11 +124,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     letter-spacing: 0.625rem;
     margin-left: 100px;
     margin-right: 100px;
-    width: fit-content;
+    /* width: fit-content; */
 }
 .youngartists h1 {
     display: flex;
-    width: fit-content;
+    /* width: fit-content; */
 }
 .about {
     display: flex;
@@ -197,6 +199,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 8vw;
+    margin: 2rem;
 }
 .contactSocials img {
     display: flex;
@@ -216,4 +219,77 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     font-size: 1.25rem;
     font-weight: bold;
     word-spacing: 0.063rem;
+}
+@media only screen and (max-width: 926px) {
+    .youngartists {
+        font-size: 1.5rem;
+    }
+
+}
+@media only screen and (max-width: 770px) {
+    .about p {
+        font-size: 1.4rem;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .about h2 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .about p {
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 1.2rem;
+    }
+    .about h2 {
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .contactEmail h5 {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .contactEmail h5 {
+        font-size: 1.2rem;
+    }
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .youngartists {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .contactEmail h5 {
+        width: fit-content;
+    }
+    .contactEmail {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        line-height: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .about p {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.1rem;
+    }
+    .about h2 {
+        font-size: 2.3rem;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .contactEmail h5 {
+        font-size: 0.8rem;
+    }
 }
