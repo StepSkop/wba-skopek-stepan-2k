@@ -31,22 +31,62 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 .icon {
     display: flex;
-    height: 100%;
+    height: auto;
     align-items: center;
     justify-content: left;
-    width: 20%;
-    padding: 5rem;
+    width: 50px;
 }
 .icon img {
+    
 }
 .menu {
     display: flex;
+    position: relative;
     justify-content: right;
     align-items: center;
     height: 100%;
     width: 80%;
-    padding-right: 1.875rem;
+    padding-right: 0.438rem;
     padding-top: 0.438rem;
+    padding-bottom: 0.438rem;
+}
+.menuButton {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.menuButton > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fbc501;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.menuButton > div::before, .menuButton > div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: -10px;
+    background: inherit;
+}
+.menuButton > div::after {
+    top: 10px;
+}
+#toggle {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0%;
 }
 .menu ul {
     text-align: center;
@@ -69,7 +109,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     font-family: Roboto,sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.507);
     border-radius: 4px;
 }
 .menu ul li :hover {
@@ -125,6 +165,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     margin-left: 100px;
     margin-right: 100px;
     /* width: fit-content; */
+    padding-left: 0.625rem;
 }
 .youngartists h1 {
     display: flex;
@@ -137,8 +178,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     align-items: center;
     background-image: url(imgs/about.jpg);
     background-repeat: no-repeat;
-    background-position-y: -18rem;
-    background-size: 200vh;
+    background-size: 100%;
     width: 100%;
     height: 31.25rem;
     font-family: Roboto,sans-serif;
@@ -148,9 +188,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     font-size: 1.563rem;
     font-weight: normal;
     text-align: center;
-    width: fit-content;
-    padding-left: 200px;
-    padding-right: 200px;
+    width: 50%;
     /* width: 62.5rem; */
     line-height: 1.2;
     color: rgba(0, 0, 0, 0.815);
@@ -165,7 +203,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     background-image: url(imgs/contact.png);
-    background-size: 200vh;
+    background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 62.5rem;
@@ -198,7 +236,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 8vw;
+    gap: 5vw;
     margin: 2rem;
 }
 .contactSocials img {
@@ -220,48 +258,135 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     font-weight: bold;
     word-spacing: 0.063rem;
 }
+/* Break Points */
+@media only screen and (min-width: 1370px) {
+    .homebackground {
+        transform: scale(3);
+        -webkit-transform: scale(3);
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .homebackground {
+        transform: scale(3);
+        -webkit-transform: scale(3);
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contact {
+        background-size: auto;
+    }
+}
 @media only screen and (max-width: 926px) {
     .youngartists {
         font-size: 1.5rem;
     }
-
+    .youngartistsCircle {
+        width: 90%;
+    }
+    .menu ul li a {
+        font-size: 0.5rem;
+        line-height: 1rem;
+        padding: 0.625rem;
+        padding-left: 0.763rem;
+        padding-right: 0.763rem;
+        font-size: 0.75em;
+        border-radius: 4px;
+    }
 }
 @media only screen and (max-width: 770px) {
     .about p {
         font-size: 1.4rem;
-        padding-left: 100px;
-        padding-right: 100px;
     }
     .about h2 {
         font-size: 3rem;
     }
+    .contact {
+        height: 40rem;
+    }
 }
 @media only screen and (max-width: 690px) {
     .about p {
-        padding-left: 70px;
-        padding-right: 70px;
         font-size: 1.2rem;
     }
     .about h2 {
         font-size: 2.5rem;
+    }
+    .footer {
+        font-size: 0.8rem;
+        height: 3rem;
     }
 }
 @media only screen and (max-width: 560px) {
     .contactEmail h5 {
         font-size: 1.4rem;
     }
+    .about {
+        background-size: auto;
+        background-position-y: -20rem;
+        background-position-x: -50rem;
+    }
+    .splitter1 {
+        height: 2rem;
+    }
 }
 @media only screen and (max-width: 500px) {
     .contactEmail h5 {
         font-size: 1.2rem;
     }
-    .footer {
-        font-size: 0.8rem;
+    .homebackground {
+        transform: scale(5);
+        -webkit-transform: scale(5);
     }
-}
-@media only screen and (max-width: 415px) {
     .youngartists {
         font-size: 0.9rem;
+    }
+    .youngartistsCircle {
+        width: 80%;
+    }
+    .header {
+        height: 3rem;
+    }
+    .icon {
+        width: 30px;
+    }
+    .menuButton {
+        display: flex;
+    }
+    .menu ul li {
+        margin-top: 1rem;
+        display: block;
+    }
+    .menu ul li :hover {
+        background-color: #fbc501bd;
+    }
+    .menu ul li a {
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+    #unsee {
+        display: block;
+        text-align: right;
+        transform: translate(10rem , 5rem);
+    }
+    #toggle {
+        display: flex;
+    }
+    #toggle:checked+ .menuButton > div {
+        transform: rotate(135deg);
+        background: #ffffff;
+    }
+    #toggle:checked + .menuButton > div::before, 
+    #toggle:checked + .menuButton > div::after {
+        transform: rotate(90deg);
+        top: 0;
+    }
+    #toggle:checked ~ #unsee {
+        transform: translate(1.5rem , 5rem);
+        transition: all 0.4 ease;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .about p {
+        font-size: 1rem;
     }
 }
 @media only screen and (max-width: 400px) {
@@ -280,9 +405,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 @media only screen and (max-width: 350px) {
     .about p {
-        padding-left: 50px;
-        padding-right: 50px;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .about h2 {
         font-size: 2.3rem;
@@ -291,5 +414,19 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 @media only screen and (max-width: 340px) {
     .contactEmail h5 {
         font-size: 0.8rem;
+    }
+    .contactLinks {
+        height: 11rem;
+    }
+    .contactSocials {
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 310px) {
+    .youngartists {
+        font-size: 0.7rem;
+    }
+    .youngartistsCircle {
+        width: 70%;
     }
 }
