@@ -259,7 +259,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     word-spacing: 0.063rem;
 }
 /* Break Points */
-@media only screen and (min-width: 1370px) {
+@media only screen and (min-width: 1150px) {
     .homebackground {
         transform: scale(3);
         -webkit-transform: scale(3);
