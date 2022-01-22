@@ -21,7 +21,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     padding-bottom: 0.5rem;
     padding-left: 00.5rem;
     column-gap: 0.5rem;
-    z-index: 999;
+    z-index: 1;
+    transition: none
 }
 .splitter1 {
     display: flex;
@@ -115,6 +116,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 .menu ul li :hover {
     background-color: #fbc5015b;
     color: #131313;
+}
+#unsee {
+    transition: none;
 }
 .home {
     display: flex;
@@ -371,7 +375,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     #toggle {
         display: flex;
     }
-    #toggle:checked+ .menuButton > div {
+    #toggle:checked + .menuButton > div {
         -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
         background: #ffffff;
