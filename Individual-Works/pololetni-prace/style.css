@@ -37,9 +37,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     justify-content: left;
     width: 50px;
 }
-.icon img {
-    
-}
 .menu {
     display: flex;
     position: relative;
