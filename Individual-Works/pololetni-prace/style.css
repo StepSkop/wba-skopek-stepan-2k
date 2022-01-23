@@ -281,12 +281,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     }
 }
 @media only screen and (max-width: 926px) {
-    .youngartists {
-        font-size: 1.5rem;
-    }
-    .youngartistsCircle {
-        width: 90%;
-    }
     .menu ul li a {
         font-size: 0.5rem;
         line-height: 1rem;
@@ -295,6 +289,12 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
         padding-right: 0.763rem;
         font-size: 0.75em;
         border-radius: 4px;
+    }
+    .youngartists {
+        font-size: 1.5rem;
+    }
+    .youngartistsCircle {
+        width: 90%;
     }
 }
 @media only screen and (max-width: 770px) {
@@ -321,37 +321,24 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     }
 }
 @media only screen and (max-width: 560px) {
-    .contactEmail h5 {
-        font-size: 1.4rem;
-    }
     .about {
         background-size: auto;
         background-position-y: -20rem;
         background-position-x: -50rem;
     }
-    .splitter1 {
-        height: 2rem;
+    .contactEmail h5 {
+        font-size: 1.4rem;
     }
 }
 @media only screen and (max-width: 500px) {
-    .contactEmail h5 {
-        font-size: 1.2rem;
-    }
-    .homebackground {
-        transform: scale(5);
-        -webkit-transform: scale(5);
-    }
-    .youngartists {
-        font-size: 0.9rem;
-    }
-    .youngartistsCircle {
-        width: 80%;
-    }
     .header {
         height: 3rem;
     }
     .icon {
         width: 30px;
+    }
+    .splitter1 {
+        height: 2rem;
     }
     .menuButton {
         display: flex;
@@ -388,6 +375,19 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     }
     #toggle:checked ~ #unsee {
         transform: translate(1.6rem , 5rem);
+    }
+    .homebackground {
+        transform: scale(5);
+        -webkit-transform: scale(5);
+    }
+    .youngartists {
+        font-size: 0.9rem;
+    }
+    .youngartistsCircle {
+        width: 80%;
+    }
+    .contactEmail h5 {
+        font-size: 1.2rem;
     }
 }
 @media only screen and (max-width: 430px) {
