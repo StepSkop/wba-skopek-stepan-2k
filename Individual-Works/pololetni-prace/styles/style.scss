@@ -1,0 +1,21 @@
+@import "reset";
+@import "vars";
+body {
+    width: 100%;
+}
+html, body {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+@import "nav";
+@import "menu";
+@import "splitter";
+@import "home";
+@import "about";
+@import "contact";
+@import "footer";
+@import "breakpoints";

@@ -1,0 +1,174 @@
+@media only screen and (min-width: 1150px) {
+    .homebackground {
+        transform: scale(3);
+        -webkit-transform: scale(3);
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .homebackground {
+        transform: scale(3);
+        -webkit-transform: scale(3);
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contact {
+        background-size: auto;
+    }
+}
+@media only screen and (max-width: 926px) {
+    .menu ul li a {
+        font-size: 0.5rem;
+        line-height: 1rem;
+        padding: 0.625rem;
+        padding-left: 0.763rem;
+        padding-right: 0.763rem;
+        font-size: 0.75em;
+        border-radius: 4px;
+    }
+    .youngartists {
+        font-size: 1.5rem;
+    }
+    .youngartistsCircle {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .about p {
+        font-size: 1.4rem;
+    }
+    .about h2 {
+        font-size: 3rem;
+    }
+    .contact {
+        height: 40rem;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .about p {
+        font-size: 1.2rem;
+    }
+    .about h2 {
+        font-size: 2.5rem;
+    }
+    .footer {
+        font-size: 0.8rem;
+        height: 3rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .about {
+        background-size: auto;
+        background-position-y: -20rem;
+        background-position-x: -50rem;
+    }
+    .contactEmail h5 {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header {
+        height: 3rem;
+    }
+    .icon {
+        width: 30px;
+    }
+    .splitter1 {
+        height: 2rem;
+    }
+    .menuButton {
+        display: flex;
+    }
+    .menu ul li {
+        margin-top: 1rem;
+        display: block;
+    }
+    .menu ul li :hover {
+        background-color: #866a05be;
+        color: white;
+    }
+    .menu ul li a {
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+    #unsee {
+        display: block;
+        text-align: right;
+        transform: translate(10rem , 5rem);
+        transition: all 0.4s ease;
+    }
+    #toggle {
+        display: flex;
+    }
+    #toggle:checked + .menuButton > div {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        background: #ffffff;
+    }
+    #toggle:checked + .menuButton > div::before, 
+    #toggle:checked + .menuButton > div::after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+    }
+    #toggle:checked ~ #unsee {
+        transform: translate(1.6rem , 5rem);
+    }
+    .homebackground {
+        transform: scale(5);
+        -webkit-transform: scale(5);
+    }
+    .youngartists {
+        font-size: 0.9rem;
+    }
+    .youngartistsCircle {
+        width: 80%;
+    }
+    .contactEmail h5 {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .about p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .contactEmail h5 {
+        width: fit-content;
+    }
+    .contactEmail {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        line-height: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .about p {
+        font-size: 0.9rem;
+    }
+    .about h2 {
+        font-size: 2.3rem;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .contactEmail h5 {
+        font-size: 0.8rem;
+    }
+    .contactLinks {
+        height: 11rem;
+    }
+    .contactSocials {
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 310px) {
+    .youngartists {
+        font-size: 0.7rem;
+    }
+    .youngartistsCircle {
+        width: 70%;
+    }
+}
