@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 390px;
+  min-height: 1056px;
+  background: rgba(248, 247, 236, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

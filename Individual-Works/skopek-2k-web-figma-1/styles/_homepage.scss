@@ -1,5 +1,6 @@
 #main {
-    width: 390px;
-    height: 1056px;
-    background-color: rebeccapurple;
+    display: flex;
+    min-width: 390px;
+    min-height: 1056px;
+    background: rgba(248, 247, 236, 0.5);
 }
