@@ -1,6 +1,43 @@
-#main {
+#home {
+    position: relative;
     display: flex;
-    min-width: 390px;
-    min-height: 1056px;
-    background: rgba(248, 247, 236, 0.5);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: $primary;
+    z-index: -1;
+    padding-left: 40px;
+    padding-right: 40px;
+    p {
+        color: aqua;
+    }
+}
+.infobox {
+    margin: 50px 0 50px 0;
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+    height: 200px;
+}
+.trips {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+@mixin trip {
+    display: flex;
+    height: 117.2px;
+    width: 100%;
+    background-color: aqua;
+}
+.trips div:nth-child(1) {
+    @include trip;
+}
+.trips div:nth-child(2) {
+    @include trip;
+}
+.trips div:nth-child(3) {
+    @include trip;
 }
