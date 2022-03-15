@@ -3,7 +3,18 @@ footer {
     bottom: 0px;
     height: 80px;
     width: 100vw;
-    bottom: 0px;
-    right: 0px;
     background-color: $secondary;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
 }
