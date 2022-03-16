@@ -1,17 +1,28 @@
 #usable-info {
-    height: calc(100vh - 160px);
+    display: flex;
+    background-color: $primary;
+    flex-direction: column;
+    height: calc(100vh - 160px);;
+    padding: 0px 55px 55px 55px;
 }
-.test {
-    height: 300px;
-    background-color: aqua;
+.usable-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    background-color: red;
 }
-
+.usable-info-content {
+    display: flex;
+    flex-direction: row;
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 32px;
+}
 @media only screen and (max-height: 450px) {
     #usable-info {
-        height: auto;
-        background-color: rebeccapurple;
-    }
-    .test {
-        background-color: red;
+         height: auto;
+         background-color: rebeccapurple;
     }
 }
