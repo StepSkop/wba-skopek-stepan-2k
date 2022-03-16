@@ -1,3 +1,10 @@
 $secondary: #CBC1B1;
 $primary: #F8F7EC;
+$contact-form-color: #ccc9c5;
 $default-font: 'Hubballi';
+body {
+    width: 100%;
+    position: relative;
+    background-color: $primary;
+    padding-bottom: 80px;
+}

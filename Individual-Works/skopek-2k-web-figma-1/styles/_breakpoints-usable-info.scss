@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1280px) {
+    #usable-info {
+        padding-top: 0px;
+        width: auto;
+        height: auto;
+    }
+    .usable-info-container {
+        margin-right: 0px;
+    }
+    .usable-info-upper {
+        margin-top: 206px;
+        flex-direction: row;
+        margin-bottom: 112px;
+    }
+    .usable-info-lower {
+        flex-direction: row;
+    }
+    .usable-info-content img {
+        width: 100px;
+        height: auto;
+    }
+}

@@ -1,0 +1,87 @@
+@media only screen and (min-width: 1280px) {
+    #home {
+        padding: 0px;
+    }
+    .homepage-banner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        width: 100%;
+        height: calc(100vh - 80px);
+        .background {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .infobox {
+        position: absolute;
+        background: #7c74745e;
+        margin: 0 27px 27px 0;
+        width: 600px;
+        height: 300px;
+        p {
+            width: 550px;
+            height: auto;
+            line-height: 20px;
+            font-size: 24px;
+            text-shadow: 0px 3px 5px #00000085;
+            text-align: left;
+            padding-bottom: 40px;
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 0px 3px 5px #00000085;
+            margin-bottom: 20px;
+            margin-top: 16px;
+        }
+        .button-info {
+            color: $primary;
+            background-color: #7c7474;;
+        }
+    }
+    #under-info {
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .trips {
+        flex-direction: row;
+    }
+
+    @mixin trip-breakpoint {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        img {
+            width: 300px;
+            height: auto;
+        }
+        .trip-text {
+            width: 300px;
+            p {
+                width: auto;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            h3 {
+                margin: 16px 0 16px 0;
+                width: auto;
+                font-size: 20px;
+            }
+        }
+    }
+    #trip-madeira{
+        @include trip-breakpoint;
+    }
+    #trip-sardinia{
+        @include trip-breakpoint;
+    }
+    #trip-cyprus{
+        @include trip-breakpoint;
+    }
+    .button-bottom {
+        margin: 40px 0 80px 0;
+    }
+}

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Hubballi");
+body {
+  width: 100%;
+  position: relative;
+  background-color: #F8F7EC;
+  padding-bottom: 80px;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -9,10 +16,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 80px;
+  height: 60px;
   width: 100vw;
   background-color: #CBC1B1;
-  top: -1px;
+  top: 0px;
   left: 0px;
 }
 
@@ -47,13 +54,36 @@ header {
 }
 
 .logo img {
-  width: 66px;
-  height: 66px;
+  width: 46px;
+  height: 46px;
 }
 
 .menu img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.buttons-container {
+  display: none;
+}
+
+.buttons-container a button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Hubballi";
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.buttons-container a button:hover {
+  background-color: #b3aa9f;
 }
 
 #home {
@@ -76,6 +106,12 @@ header {
   z-index: -1;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.background {
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
 .infobox {
@@ -367,8 +403,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: calc(100vh - 160px);
-  padding: 0px 55px 55px 55px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 55px 55px 55px 55px;
 }
 
 .usable-info-container {
@@ -382,9 +423,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
-  width: 100%;
-  background-color: red;
+  margin-right: 70px;
+  gap: 40px;
+  height: 100%;
 }
 
 .usable-info-content {
@@ -395,24 +436,294 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: rebeccapurple;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 32px;
+  height: 50px;
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-@media only screen and (max-height: 450px) {
-  #usable-info {
-    height: auto;
-    background-color: rebeccapurple;
-  }
+.usable-info-content img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-right: 25px;
+}
+
+.usable-info-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+}
+
+.usable-info-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 40px 70px 40px;
+}
+
+#contact .header {
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.contact-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.contact-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.contact-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.firstname {
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 600;
+  padding: 3px 0 3px 6px;
+  font-size: 11px;
+  line-height: 24px;
+  background-color: #ccc9c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.lastname {
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 600;
+  padding: 3px 0 3px 6px;
+  font-size: 11px;
+  line-height: 24px;
+  background-color: #ccc9c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.phone {
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 600;
+  padding: 3px 0 3px 6px;
+  font-size: 11px;
+  line-height: 24px;
+  background-color: #ccc9c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.email {
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 600;
+  padding: 3px 0 3px 6px;
+  font-size: 11px;
+  line-height: 24px;
+  background-color: #ccc9c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.message {
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 600;
+  padding: 3px 0 3px 6px;
+  font-size: 11px;
+  line-height: 24px;
+  background-color: #ccc9c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  border-radius: 2px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 144px;
+}
+
+.button-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25px;
+  width: 120px;
+  font-family: "Hubballi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 5px #00000085;
+          box-shadow: 0px 3px 5px #00000085;
+  background-color: #7c7474;
+  color: #F8F7EC;
 }
 
 footer {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   bottom: 0px;
-  height: 80px;
+  height: 60px;
   width: 100vw;
   background-color: #CBC1B1;
   font-family: "Hubballi";
@@ -420,7 +731,6 @@ footer {
   font-weight: 600;
   font-size: 12px;
   line-height: 160%;
-  /* or 19px */
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -432,5 +742,224 @@ footer {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media only screen and (min-width: 1280px) {
+  #home {
+    padding: 0px;
+  }
+  .homepage-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+  .homepage-banner .background {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .infobox {
+    position: absolute;
+    background: #7c74745e;
+    margin: 0 27px 27px 0;
+    width: 600px;
+    height: 300px;
+  }
+  .infobox p {
+    width: 550px;
+    height: auto;
+    line-height: 20px;
+    font-size: 24px;
+    text-shadow: 0px 3px 5px #00000085;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  .infobox h1 {
+    font-size: 50px;
+    text-shadow: 0px 3px 5px #00000085;
+    margin-bottom: 20px;
+    margin-top: 16px;
+  }
+  .infobox .button-info {
+    color: #F8F7EC;
+    background-color: #7c7474;
+  }
+  #under-info {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .trips {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #trip-madeira {
+    height: auto;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #trip-madeira img {
+    width: 300px;
+    height: auto;
+  }
+  #trip-madeira .trip-text {
+    width: 300px;
+  }
+  #trip-madeira .trip-text p {
+    width: auto;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #trip-madeira .trip-text h3 {
+    margin: 16px 0 16px 0;
+    width: auto;
+    font-size: 20px;
+  }
+  #trip-sardinia {
+    height: auto;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #trip-sardinia img {
+    width: 300px;
+    height: auto;
+  }
+  #trip-sardinia .trip-text {
+    width: 300px;
+  }
+  #trip-sardinia .trip-text p {
+    width: auto;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #trip-sardinia .trip-text h3 {
+    margin: 16px 0 16px 0;
+    width: auto;
+    font-size: 20px;
+  }
+  #trip-cyprus {
+    height: auto;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #trip-cyprus img {
+    width: 300px;
+    height: auto;
+  }
+  #trip-cyprus .trip-text {
+    width: 300px;
+  }
+  #trip-cyprus .trip-text p {
+    width: auto;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #trip-cyprus .trip-text h3 {
+    margin: 16px 0 16px 0;
+    width: auto;
+    font-size: 20px;
+  }
+  .button-bottom {
+    margin: 40px 0 80px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #usable-info {
+    padding-top: 0px;
+    width: auto;
+    height: auto;
+  }
+  .usable-info-container {
+    margin-right: 0px;
+  }
+  .usable-info-upper {
+    margin-top: 206px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 112px;
+  }
+  .usable-info-lower {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .usable-info-content img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contact-names {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #contact {
+    padding-left: 330px;
+    padding-right: 330px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  header {
+    height: 80px;
+  }
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu img {
+    display: none;
+  }
+  .logo img {
+    height: 66px;
+    width: auto;
+  }
+  .buttons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  footer {
+    height: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

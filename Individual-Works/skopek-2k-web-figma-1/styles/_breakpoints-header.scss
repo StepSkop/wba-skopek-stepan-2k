@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1280px) {
+    header {
+        height: 80px;
+    }
+    .menu {
+        justify-content: center;
+    }
+    .menu img {
+        display: none;
+
+    }
+    .logo img {
+        height: 66px;
+        width: auto;
+    }
+    .buttons-container {
+        display: flex;
+    }
+}

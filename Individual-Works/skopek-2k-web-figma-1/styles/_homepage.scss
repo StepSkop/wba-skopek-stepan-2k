@@ -10,6 +10,11 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+.background {
+    display: none;
+    width: 100%;
+    height: auto;
+}
 .infobox {
     margin: 50px 0 50px 0;
     display: flex;
@@ -120,13 +125,13 @@
     width: fit-content;
 }
 .button-bottom {
-    @include button-want;
+    @include button;
     background-color: #7c7474;
     color: $primary;
     margin-bottom: 40px;
 }
 .button-info {
-    @include button-want;
+    @include button;
     background-color: #a19b98;
     color: #000000;
     margin-bottom: 16px;

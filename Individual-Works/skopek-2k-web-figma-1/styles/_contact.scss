@@ -1,0 +1,79 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 40px 70px 40px;
+    .header {
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+}
+.contact-names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.contact-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.firstname {
+    @include mobile-contact-box;
+    width: 100%;
+}
+.lastname {
+    @include mobile-contact-box;
+    width: 100%;
+}
+.phone {
+    @include mobile-contact-box;
+    width: 100%; 
+}
+.email {
+    @include mobile-contact-box;
+    width: 100%;
+}
+.message {
+    @include mobile-contact-box;
+    align-items: flex-start;
+    justify-content: start;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 144px;
+}
+.button-send {
+    @include button;
+    background-color: #7c7474;
+    color: $primary;
+}
