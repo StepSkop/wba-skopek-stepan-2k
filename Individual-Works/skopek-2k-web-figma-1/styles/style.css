@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Hubballi");
 body {
-  width: 100%;
+  overflow-x: hidden;
+  width: 100vw;
   position: relative;
   background-color: #F8F7EC;
   padding-bottom: 80px;
