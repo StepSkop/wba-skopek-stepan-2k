@@ -19,6 +19,13 @@
 
 html, body {
   background-color: grey;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -68,6 +75,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
   width: 50%;
   height: 100%;
   padding-top: 0.25rem;
@@ -78,6 +86,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
 }
 
 .menu-header .about-button-header-custom {
@@ -93,6 +108,8 @@ header {
           align-items: center;
   width: 5rem;
   height: 1.75rem;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
 }
 
 .menu-header .about-button-header-custom p {
@@ -111,7 +128,16 @@ header {
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
   font-weight: bolder;
-  text-shadow: 0px 2px 0px #6BD8FF;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
+  text-shadow: 0px 1px 0px #6BD8FF;
+}
+
+.menu-header .about-button-header-custom:hover p {
+  color: #6BD8FF;
+  text-shadow: 0px 2px 1px #490082;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .menu-header .join-button-header {
@@ -162,6 +188,18 @@ header {
           transform: scale(1.1);
 }
 
+.menu-header .join-button-header-container img {
+  width: 1.7rem;
+  height: auto;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.menu-header .join-button-header-container:hover img {
+  -webkit-transform: translateY(1.2rem);
+          transform: translateY(1.2rem);
+}
+
 #homepage {
   z-index: 0;
   display: -webkit-box;
@@ -203,7 +241,7 @@ header {
   row-gap: 3rem;
 }
 
-#homepage .homepage-section .game-vibe-text {
+#homepage .homepage-section #game-vibe-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,6 +301,19 @@ header {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background: #215b32;
+}
+
+#homepage .homepage-section .join-button-home-container img {
+  position: absolute;
+  width: 1.7rem;
+  height: auto;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+#homepage .homepage-section .join-button-home-container:hover img {
+  -webkit-transform: rotateZ(120deg) translate(0.1rem, 1.4rem);
+          transform: rotateZ(120deg) translate(0.1rem, 1.4rem);
 }
 
 #homepage .learn-more-custom {
@@ -338,11 +389,11 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: calc(100vh - 3rem);
+  height: calc(100vh);
   min-height: 764px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -368,6 +419,7 @@ header {
 .games-gallery-custom {
   display: block;
   width: 100%;
+  max-width: 59rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -381,6 +433,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 59rem;
 }
 
 .carousel-caption {
@@ -422,7 +475,7 @@ header {
   width: 49vw;
   height: 25vw;
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   font-family: "Inter";
   font-weight: bolder;
   letter-spacing: 0.1rem;
@@ -455,7 +508,7 @@ header {
   width: 49vw;
   height: 25vw;
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   font-family: "Inter";
   font-weight: bolder;
   letter-spacing: 0.1rem;
@@ -488,7 +541,7 @@ header {
   width: 49vw;
   height: 25vw;
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   font-family: "Inter";
   font-weight: bolder;
   letter-spacing: 0.1rem;
@@ -601,7 +654,7 @@ header {
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
   padding: 0 1rem 0 1rem;
-  background: #32F2AA;
+  background: #C33030;
 }
 
 .game-csgo {
@@ -625,7 +678,7 @@ header {
   -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
-  background: #32F2AA;
+  background: #FF902D;
 }
 
 .game-cod {
@@ -703,6 +756,68 @@ header {
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
   background: #40692F;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--background-color);
+  padding: 0 22vw 3rem 22vw;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+#about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #6BD8FF;
+  font-family: "Lexend";
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 3px 0px #490082;
+}
+
+#about-content {
+  font-family: "Inter";
+  font-weight: bolder;
+  text-align: center;
+  color: #490082;
+  text-shadow: 0px 1px 1px #490082;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 100%;
+  background-color: #252525;
+}
+
+footer p {
+  font-family: "Inter";
+  font-weight: bolder;
+  color: white;
+  font-size: 0.75rem;
 }
 
 @media only screen and (min-width: 990px) {

@@ -23,6 +23,12 @@ $secondary-background-color: #490082;
 :root{
     --background-color: #7821bd;
 }
-html, body{
+html, body {
     background-color: grey;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
 }

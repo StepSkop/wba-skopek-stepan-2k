@@ -3,9 +3,9 @@
     position: relative;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 3rem);
+    height: calc(100vh);
     min-height: 764px;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     transition: ease 0.4s;
     background-color: var(--background-color);

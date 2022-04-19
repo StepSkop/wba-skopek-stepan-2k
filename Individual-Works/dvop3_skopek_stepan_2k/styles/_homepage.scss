@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: center;
         row-gap: 3rem;
-        .game-vibe-text{
+        #game-vibe-text{
             display: flex;
             font-family: $secondary-font;
             text-align: center;
@@ -34,6 +34,15 @@
         .join-button-home:hover{
             transform: scale(1.1);
             background: $button-color-hover;
+        }
+        .join-button-home-container img{
+            position: absolute;
+            width: 1.7rem;
+            height: auto;
+            transition: ease 0.2s;
+        }
+        .join-button-home-container:hover img{
+            transform: rotateZ(120deg) translate(0.1rem, 1.4rem);
         }
     }
     .learn-more-custom{

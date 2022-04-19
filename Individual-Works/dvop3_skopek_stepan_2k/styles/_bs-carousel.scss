@@ -1,13 +1,14 @@
 .games-gallery-custom{
     display: block;
     width: 100%;
+    max-width: 59rem;
     height: fit-content;
     top: 0;
 }
 .carousel {
     display: flex;
     justify-content: center;
-
+    max-width: 59rem;
     }
     .carousel-caption {
         bottom: 3rem;
@@ -62,11 +63,11 @@
     .game-apex{
         @include game;
         padding: 0 1rem 0 1rem;
-        background: #32F2AA;
+        background: #C33030;
     }
     .game-csgo{
         @include game;
-        background: #32F2AA;
+        background: #FF902D;
     }
     .game-cod{
         @include game;
