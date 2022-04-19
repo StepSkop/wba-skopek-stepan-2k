@@ -1,0 +1,80 @@
+.games-gallery-custom{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+
+    }
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 0;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: $secondary-color;
+    }
+    .carousel-item {
+        height: 25rem;
+    }
+    .carousel-item.active{
+        @include carousel-mod;
+    }
+    .carousel-item-next{
+        @include carousel-mod;
+    }
+    .carousel-item-prev{
+        @include carousel-mod;
+    }
+    .carousel-control-next{
+        max-height: 20rem;
+        height: 60vw;
+    }
+    .carousel-control-next-icon{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .carousel-control-prev{
+        max-height: 20rem;
+        height: 60vw;
+    }
+    .carousel-control-prev-icon{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .game-window-1{
+        @include game-window-preset;
+    }
+    .game-window-2{
+        @include game-window-preset;
+        display: none;
+    }
+    .game-sot{
+        @include game;
+        background: #32F2AA;
+        img{
+            height: 80%;
+            width: auto;
+        }
+    }
+    .game-apex{
+        @include game;
+        background: #32F2AA;
+    }
+    .game-csgo{
+        @include game;
+        background: #32F2AA;
+    }
+    .game-cod{
+        @include game;
+        background: #32F2AA;
+    }
+    .game-lol{
+        @include game;
+        background: #32F2AA;
+    }.game-mc{
+        @include game;
+        background: #32F2AA;
+    }
