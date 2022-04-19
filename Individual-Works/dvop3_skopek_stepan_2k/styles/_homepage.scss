@@ -8,7 +8,8 @@
     width: 100%;
     min-height: 764px;
     height: calc(100vh - 3rem);
-    background-color: $primary-color;
+    transition: ease 0.4s;
+    background-color: var(--background-color);
     .homepage-section{
         display: flex;
         flex-direction: column;
@@ -28,6 +29,11 @@
             @include join-button;
             height: 2.2rem;
             width: 6rem;
+            transition: ease 0.15s;
+        }
+        .join-button-home:hover{
+            transform: scale(1.1);
+            background: $button-color-hover;
         }
     }
     .learn-more-custom{
@@ -35,19 +41,32 @@
         text-decoration: none;
         flex-direction: column;
         position: absolute;
-        bottom: 0.5rem;
+        bottom: 1.2rem;
+        transition: ease 0.4s;
         p{
+            position: relative;
             font-family: $primary-font;
             color: black;
             font-size: 0.7rem;
             font-weight: bolder;
             letter-spacing: 0.1rem;
             margin-right: -0.1rem;
-            text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-            margin-bottom: 0.75rem;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0.3rem;
+            //animation: bounce-arrow 1s infinite;
         }
         img{
+            position: relative;
             height: 2.5rem;
+            animation: bounce-arrow 1.5s infinite;
         }
+        @keyframes bounce-arrow{
+            0%{top: 0rem;}
+            50%{top: 1rem;}
+            100%{top: 0rem;}
+        }
+    }
+    .learn-more-custom:hover{
+        transform: scale(1.1);
     }
 }

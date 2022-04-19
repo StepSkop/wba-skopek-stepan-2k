@@ -13,6 +13,10 @@
   font-family: Lexend;
 }
 
+:root {
+  --background-color: #7821bd;
+}
+
 html, body {
   background-color: grey;
 }
@@ -28,7 +32,11 @@ header {
   height: 3rem;
   padding-left: 7vw;
   padding-right: 7vw;
-  background-color: #7821bd;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  -webkit-filter: drop-shadow(0px 8px 8px var(--background-color));
+          filter: drop-shadow(0px 8px 8px var(--background-color));
+  background-color: var(--background-color);
 }
 
 .logo {
@@ -123,6 +131,8 @@ header {
   background: #3BA55D;
   border-radius: 6px;
   text-decoration: none;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
 }
 
 .menu-header .join-button-header p {
@@ -146,6 +156,12 @@ header {
   text-shadow: 0px 1.5px 0px #6BD8FF;
 }
 
+.menu-header .join-button-header:hover {
+  background: #215b32;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 #homepage {
   z-index: 0;
   display: -webkit-box;
@@ -165,7 +181,9 @@ header {
   width: 100%;
   min-height: 764px;
   height: calc(100vh - 3rem);
-  background-color: #7821bd;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: var(--background-color);
 }
 
 #homepage .homepage-section {
@@ -216,6 +234,8 @@ header {
   text-decoration: none;
   height: 2.2rem;
   width: 6rem;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
 }
 
 #homepage .homepage-section .join-button-home p {
@@ -239,6 +259,12 @@ header {
   text-shadow: 0px 1.5px 0px #6BD8FF;
 }
 
+#homepage .homepage-section .join-button-home:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #215b32;
+}
+
 #homepage .learn-more-custom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,22 +275,57 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 1.2rem;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
 }
 
 #homepage .learn-more-custom p {
+  position: relative;
   font-family: "Inter";
   color: black;
   font-size: 0.7rem;
   font-weight: bolder;
   letter-spacing: 0.1rem;
   margin-right: -0.1rem;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-  margin-bottom: 0.75rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.3rem;
 }
 
 #homepage .learn-more-custom img {
+  position: relative;
   height: 2.5rem;
+  -webkit-animation: bounce-arrow 1.5s infinite;
+          animation: bounce-arrow 1.5s infinite;
+}
+
+@-webkit-keyframes bounce-arrow {
+  0% {
+    top: 0rem;
+  }
+  50% {
+    top: 1rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}
+
+@keyframes bounce-arrow {
+  0% {
+    top: 0rem;
+  }
+  50% {
+    top: 1rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}
+
+#homepage .learn-more-custom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #games {
@@ -285,7 +346,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #490082;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: var(--background-color);
   padding: 4rem 7vw 0 7vw;
 }
 
@@ -330,7 +393,7 @@ header {
 }
 
 .carousel-item {
-  height: 25rem;
+  height: 32rem;
 }
 
 .carousel-item.active {
@@ -537,6 +600,7 @@ header {
   -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
+  padding: 0 1rem 0 1rem;
   background: #32F2AA;
 }
 
@@ -585,7 +649,12 @@ header {
   -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
-  background: #32F2AA;
+  padding: 0 1rem 0 1rem;
+  background: #2D2929;
+}
+
+.game-cod img {
+  padding-top: 0.25rem;
 }
 
 .game-lol {
@@ -609,7 +678,7 @@ header {
   -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
-  background: #32F2AA;
+  background: #06545E;
 }
 
 .game-mc {
@@ -633,7 +702,7 @@ header {
   -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
-  background: #32F2AA;
+  background: #40692F;
 }
 
 @media only screen and (min-width: 990px) {

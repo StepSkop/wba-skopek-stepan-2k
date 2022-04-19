@@ -17,7 +17,7 @@
         background-color: $secondary-color;
     }
     .carousel-item {
-        height: 25rem;
+        height: 32rem;
     }
     .carousel-item.active{
         @include carousel-mod;
@@ -61,6 +61,7 @@
     }
     .game-apex{
         @include game;
+        padding: 0 1rem 0 1rem;
         background: #32F2AA;
     }
     .game-csgo{
@@ -69,12 +70,16 @@
     }
     .game-cod{
         @include game;
-        background: #32F2AA;
+        padding: 0 1rem 0 1rem;
+        background: #2D2929;
+        img{
+            padding-top: 0.25rem;
+        }
     }
     .game-lol{
         @include game;
-        background: #32F2AA;
+        background: #06545E;
     }.game-mc{
         @include game;
-        background: #32F2AA;
+        background: #40692F;
     }

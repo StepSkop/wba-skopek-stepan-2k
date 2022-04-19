@@ -17,6 +17,12 @@ $primary-color: #7821bd;
 $secondary-color: #6BD8FF;
 $tertiary-color: #CE4B95;
 $button-color: #3BA55D;
+$button-color-hover: #215b32;
+$primary-background-color: $primary-color;
+$secondary-background-color: #490082;
+:root{
+    --background-color: #7821bd;
+}
 html, body{
     background-color: grey;
 }

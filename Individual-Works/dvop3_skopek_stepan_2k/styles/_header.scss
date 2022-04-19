@@ -6,7 +6,9 @@ header{
     height: 3rem;
     padding-left: 7vw;
     padding-right: 7vw;
-    background-color: $primary-color;
+    transition: ease 0.4s;
+    filter: drop-shadow(0px 8px 8px var(--background-color));
+    background-color: var(--background-color);
 }
 .logo{
     display: flex;
@@ -54,5 +56,10 @@ header{
     }
     .join-button-header{
         @include join-button;
+        transition: ease 0.15s;
+    }
+    .join-button-header:hover{
+        background: $button-color-hover;
+        transform: scale(1.1);
     }
 }
