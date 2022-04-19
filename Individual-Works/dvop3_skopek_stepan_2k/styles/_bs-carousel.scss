@@ -2,12 +2,12 @@
     display: block;
     width: 100%;
     max-width: 59rem;
-    height: fit-content;
     top: 0;
 }
 .carousel {
     display: flex;
     justify-content: center;
+    min-height: 40rem;
     max-width: 59rem;
     }
     .carousel-caption {
@@ -32,6 +32,7 @@
     .carousel-control-next{
         max-height: 20rem;
         height: 60vw;
+        max-width: 8.75rem;
     }
     .carousel-control-next-icon{
         height: 1.5rem;
@@ -40,6 +41,7 @@
     .carousel-control-prev{
         max-height: 20rem;
         height: 60vw;
+        max-width: 8.75rem;
     }
     .carousel-control-prev-icon{
         height: 1.5rem;

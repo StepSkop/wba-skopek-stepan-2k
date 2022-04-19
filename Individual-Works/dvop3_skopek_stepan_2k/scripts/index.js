@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll("section");
 const options = {
-    threshold: "0.7",
+    threshold: "0.6",
 };
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((i) => {
@@ -36,7 +36,7 @@ function typingHome() {
         }
         document.getElementById("game-vibe-text").innerHTML += char;
         j++;
-        setTimeout(typingHome,50);
+        setTimeout(typingHome,70);
     }
 }
 
@@ -51,6 +51,6 @@ function typingAbout() {
         }
         document.getElementById("about-content").innerHTML += char;
         k++;
-        setTimeout(typingAbout,20);
+        setTimeout(typingAbout,5);
     }
 }
