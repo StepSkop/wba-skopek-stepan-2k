@@ -1,15 +1,15 @@
 #homepage{
     z-index: 0;
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 375px;
+    min-height: 764px;
     height: calc(100vh - 3rem);
     transition: ease 0.4s;
     background-color: var(--background-color);
+    
     .homepage-section{
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@
         text-decoration: none;
         flex-direction: column;
         position: absolute;
-        bottom: 1.2rem;
+        bottom: 3rem;
         transition: ease 0.4s;
         p{
             position: relative;
