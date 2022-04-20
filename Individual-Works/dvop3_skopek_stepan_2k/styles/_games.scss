@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 3rem);
-    min-height: 764px;
+    min-height: calc((var(--vh, 1vh) * 100) - 6rem);
+    height: fit-content;
     justify-content: center;
     align-items: center;
-    transition: ease 0.4s;
+    transition: background-color ease 0.4s;
     background-color: var(--background-color);
-    padding: 6rem 7vw 0 7vw;
+    padding: 3rem 7vw 0 7vw;
 
 }
 #games-title{
