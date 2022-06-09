@@ -1,0 +1,19 @@
+.banner-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    img {
+        display: flex;
+        width: 100%;
+        height: auto;
+
+    }
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        position: absolute;
+        bottom: 2rem;
+        left: 8rem;
+        font-size: 7rem;
+    }
+}

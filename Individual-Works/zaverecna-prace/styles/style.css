@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin: 0;
+}
+
+.banner-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.banner-container img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.banner-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  left: 8rem;
+  font-size: 7rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  row-gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 8.75rem 9rem 8.75rem;
+}
+
+.main h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30%;
+  width: 100%;
+  gap: 2rem;
+}
+
+.row .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 480px;
+  min-width: 350px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  row-gap: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 197, 255, 0.2)), color-stop(0.01%, rgba(0, 171, 221, 0.2)), to(rgba(255, 255, 255, 0.2))), rgba(109, 189, 208, 0.23);
+  background: linear-gradient(180deg, rgba(0, 197, 255, 0.2) 0%, rgba(0, 171, 221, 0.2) 0.01%, rgba(255, 255, 255, 0.2) 100%), rgba(109, 189, 208, 0.23);
+  opacity: 0.75;
+}
+
+.row .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row .item .title {
+  bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.row .item .content {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  max-width: 350px;
+}
+
+.img4 {
+  height: auto;
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */
